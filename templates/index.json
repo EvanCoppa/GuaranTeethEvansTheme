@@ -1,1 +1,255 @@
-{"sections":{"1715834526f7054562":{"type":"apps","blocks":{"forms_inline_Faierj":{"type":"shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a","settings":{"form_id":"111045","text_color":"#202020","button_background_color":"#202020","button_label_color":"#ffffff","links_color":"#1878b9","errors_color":"#e02229","text_alignment":"center","form_alignment":"center","padding_top":0,"padding_bottom":0,"padding_right":0,"padding_left":0}}},"block_order":["forms_inline_Faierj"],"settings":{"include_margins":true}},"image-with-text":{"type":"image-with-text","blocks":{"heading":{"type":"heading","settings":{"heading":"At-Home, Dentist Level Clean","heading_size":"h2"}},"button":{"type":"button","settings":{"button_label":"Shop now","button_link":"shopify:\/\/collections\/all","button_style_secondary":false}}},"block_order":["heading","button"],"settings":{"image":"shopify:\/\/shop_images\/Screenshot_2024-04-23_at_9.03.26_PM.jpg","height":"adapt","desktop_image_width":"large","layout":"text_first","desktop_content_position":"middle","desktop_content_alignment":"left","content_layout":"overlap","section_color_scheme":"scheme-1","color_scheme":"scheme-1","image_behavior":"none","mobile_content_alignment":"center","padding_top":0,"padding_bottom":0}},"featured-collection":{"type":"featured-collection","settings":{"title":"Featured products","heading_size":"h2","description":"<p>Shop Our Best Sellers!<\/p>","show_description":false,"description_style":"body","collection":"everyday-oral-care","products_to_show":5,"columns_desktop":4,"full_width":false,"show_view_all":false,"view_all_style":"outline","enable_desktop_slider":true,"color_scheme":"scheme-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"enable_quick_add":true,"columns_mobile":"2","swipe_on_mobile":true,"padding_top":48,"padding_bottom":52}},"image_with_text_Ft86XH":{"type":"image-with-text","blocks":{"heading_paTkAy":{"type":"heading","settings":{"heading":"Confidence Looks Great","heading_size":"h2"}},"text_EJAAQB":{"type":"text","settings":{"text":"<p>Your smile is your first impression, choose GuaranTeeth to make it your best impression.<\/p>","text_style":"subtitle"}},"button_fPAa7a":{"type":"button","settings":{"button_label":"Shop Now","button_link":"shopify:\/\/collections\/all","button_style_secondary":false}}},"block_order":["heading_paTkAy","text_EJAAQB","button_fPAa7a"],"settings":{"image":"shopify:\/\/shop_images\/IMG_EA2BB87F8E70-1.jpg","height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"","color_scheme":"","image_behavior":"none","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"collage_g8Mb6k":{"type":"collage","blocks":{"image_N73gtx":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/V34_-_Content_-_Block_-_1_780x_2a5842b8-09bc-4497-b255-25e63de7f813.webp"}},"product_fHrX44":{"type":"product","settings":{"product":"v34-color-corrector-serum","second_image":false}},"collection_wCpdDk":{"type":"collection","settings":{"collection":"everyday-oral-care"}}},"block_order":["image_N73gtx","product_fHrX44","collection_wCpdDk"],"settings":{"heading":"Instant Results.","heading_size":"h2","desktop_layout":"left","mobile_layout":"collage","card_styles":"product-card-wrapper","color_scheme":"","padding_top":36,"padding_bottom":36}},"collection_list_kLFR33":{"type":"collection-list","blocks":{"featured_collection_zDEeXE":{"type":"featured_collection","settings":{"collection":"everyday-oral-care"}},"featured_collection_PLtcLk":{"type":"featured_collection","settings":{"collection":"eco-friendly-products"}},"featured_collection_49tJp6":{"type":"featured_collection","settings":{"collection":"toothbrushes"}}},"block_order":["featured_collection_zDEeXE","featured_collection_PLtcLk","featured_collection_49tJp6"],"settings":{"title":"Collections","heading_size":"h1","image_ratio":"square","columns_desktop":3,"color_scheme":"","show_view_all":false,"columns_mobile":"2","swipe_on_mobile":true,"padding_top":36,"padding_bottom":36}}},"order":["1715834526f7054562","image-with-text","featured-collection","image_with_text_Ft86XH","collage_g8Mb6k","collection_list_kLFR33"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "1715834526f7054562": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_Faierj": {
+          "type": "shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "111045",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_Faierj"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "image-with-text": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "At-Home, Dentist Level Clean",
+            "heading_size": "h2"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-04-23_at_9.03.26_PM.jpg",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "<p>Shop Our Best Sellers!<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "everyday-oral-care",
+        "products_to_show": 5,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "outline",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_Ft86XH": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_paTkAy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Confidence Looks Great",
+            "heading_size": "h2"
+          }
+        },
+        "text_EJAAQB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Your smile is your first impression, choose GuaranTeeth to make it your best impression.<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "button_fPAa7a": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_paTkAy",
+        "text_EJAAQB",
+        "button_fPAa7a"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_EA2BB87F8E70-1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_g8Mb6k": {
+      "type": "collage",
+      "blocks": {
+        "image_N73gtx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/V34_-_Content_-_Block_-_1_780x_2a5842b8-09bc-4497-b255-25e63de7f813.webp"
+          }
+        },
+        "product_fHrX44": {
+          "type": "product",
+          "settings": {
+            "product": "v34-color-corrector-serum",
+            "second_image": false
+          }
+        },
+        "collection_wCpdDk": {
+          "type": "collection",
+          "settings": {
+            "collection": "everyday-oral-care"
+          }
+        }
+      },
+      "block_order": [
+        "image_N73gtx",
+        "product_fHrX44",
+        "collection_wCpdDk"
+      ],
+      "settings": {
+        "heading": "Instant Results.",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_kLFR33": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_zDEeXE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "everyday-oral-care"
+          }
+        },
+        "featured_collection_PLtcLk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "eco-friendly-products"
+          }
+        },
+        "featured_collection_49tJp6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "toothbrushes"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_zDEeXE",
+        "featured_collection_PLtcLk",
+        "featured_collection_49tJp6"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "clips_C9GnBW": {
+      "type": "clips",
+      "settings": {
+        "heading": "Our Videos",
+        "video_1": "shopify:\/\/files\/videos\/UnboxWithMe.mp4",
+        "video_2": "shopify:\/\/files\/videos\/OnTheGoSizzle.mp4",
+        "video_3": "shopify:\/\/files\/videos\/KamariBRollEdit.mp4",
+        "video_4": "shopify:\/\/files\/videos\/TikTok2.mp4",
+        "slide_width": "250px",
+        "slide_height": "350px"
+      }
+    }
+  },
+  "order": [
+    "1715834526f7054562",
+    "image-with-text",
+    "featured-collection",
+    "image_with_text_Ft86XH",
+    "collage_g8Mb6k",
+    "collection_list_kLFR33",
+    "clips_C9GnBW"
+  ]
+}
