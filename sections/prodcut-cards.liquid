@@ -1,126 +1,129 @@
 <section class="h-[500px] w-full py-6">
-    <div class="mx-auto flex h-full w-[95%] max-w-7xl">
-        <div class="hidden h-full w-1/4 rounded-lg bg-gray-100 md:flex">
-            <div class="m-auto flex flex-col gap-4 p-6">
-                <h2 class="text-4xl">{{ section.settings.title }}</h2>
-                <p>{{ section.settings.description }}</p>
-                <a
-                    href="/prodcuts"
-                    class="mr-auto flex rounded-full border-2 border-gray-300 px-3 py-2 transition-all duration-300 hover:border-black"
-                    >{{ section.settings.button_text }}
-                    <svg
-                        aria-hidden="true"
-                        focusable="false"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 320 512"
-                        class="icon-chevron-right my-auto ml-2 h-3 w-3"
-                        ><path
-                            fill="currentColor"
-                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
-                        ></path></svg></a
-                >
-            </div>
-        </div>
-        <section class="photos w-full overflow-y-hidden overflow-x-scroll pl-4">
-            <div class="flex h-full w-[1100px] gap-4">
-                {% for product in section.settings.products %}
-                    <div class="relative my-auto product-card">
-                        <div class="hiddenElement mx-auto flex h-[430px] w-[230px] transform-gpu flex-col overflow-hidden transition-all duration-150 hover:scale-[101%]">
-                            <a href="{{ product.url }}" class="h-[70%]">
-                                <img
-                                    class="mx-auto h-[100%] w-full rounded-lg object-cover product-image"
-                                    src="{{ product.images[0] | img_url: '1000x' }}"
-                                    data-hover-src="{{ product.images[1] | img_url: '1000x' }}"
-                                    alt="{{ product.title }}"
-                                />
-                            </a>
-                            <div class="flex flex-col gap-1 py-2 pt-3">
-                                <a
-                                    href="{{ product.url }}"
-                                    class="text-center text-xl text-black/85 transition-all duration-300 hover:underline"
-                                >
-                                    {{ product.title }}
-                                </a>
-                                <div class="text-md text-center font-semibold text-blue-600">
-                                    {{ product.price | money }}
-                                </div>
-                            </div>
-                            <button
-                                onclick="addToCart('{{ product.id }}')"
-                                class="mx-4 mt-auto h-10 w-auto rounded-full bg-black text-white transition-all duration-300 hover:border-2 hover:border-black hover:bg-white hover:text-black"
-                            >
-                                Add to Cart
-                            </button>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-        </section>
+  <div class="mx-auto flex h-full w-[95%] max-w-7xl">
+    <div class="hidden h-full w-1/4 rounded-lg bg-gray-100 md:flex">
+      <div class="m-auto flex flex-col gap-4 p-6">
+        <h2 class="text-4xl">{{ section.settings.title }}</h2>
+        <p>{{ section.settings.description }}</p>
+        <a
+          href="/prodcuts"
+          class="mr-auto flex rounded-full border-2 border-gray-300 px-3 py-2 transition-all duration-300 hover:border-black"
+        >
+          {{- section.settings.button_text }}
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+            class="icon-chevron-right my-auto ml-2 h-3 w-3"
+          >
+            <path
+                fill="currentColor"
+                d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+            ></path>
+          </svg>
+        </a>
+      </div>
     </div>
+    <section class="photos w-full overflow-y-hidden overflow-x-scroll pl-4">
+      <div class="flex h-full w-[1100px] gap-4">
+        {% for product in section.settings.products %}
+          <div class="relative my-auto product-card">
+            <div class="hiddenElement mx-auto flex h-[430px] w-[230px] transform-gpu flex-col overflow-hidden transition-all duration-150 hover:scale-[101%]">
+              <a href="{{ product.url }}" class="h-[70%]">
+                <img
+                  class="mx-auto h-[100%] w-full rounded-lg object-cover product-image"
+                  src="{{ product.images[0] | img_url: '1000x' }}"
+                  data-hover-src="{{ product.images[1] | img_url: '1000x' }}"
+                  alt="{{ product.title }}"
+                >
+              </a>
+              <div class="flex flex-col gap-1 py-2 pt-3">
+                <a
+                  href="{{ product.url }}"
+                  class="text-center text-xl text-black/85 transition-all duration-300 hover:underline"
+                >
+                  {{ product.title }}
+                </a>
+                <div class="text-md text-center font-semibold text-blue-600">
+                  {{ product.price | money }}
+                </div>
+              </div>
+              <button
+                onclick="addToCart('{{ product.id }}')"
+                class="mx-4 mt-auto h-10 w-auto rounded-full bg-black text-white transition-all duration-300 hover:border-2 hover:border-black hover:bg-white hover:text-black"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
 </section>
 
 <style>
-    .hiddenElement {
-        opacity: 1;
-        transition: opacity 0.3s, transform 0.3s;
-    }
-    .photos::-webkit-scrollbar {
-        display: none;
-    }
-    .photos {
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
-    }
-    .product-card.hiddenElement:not(.fully-visible) {
-        opacity: 0.5;
-    }
-    .product-image {
-        transition: opacity 0.3s;
-    }
-    .product-image:hover {
-        opacity: 0;
-    }
+  .hiddenElement {
+      opacity: 1;
+      transition: opacity 0.3s, transform 0.3s;
+  }
+  .photos::-webkit-scrollbar {
+      display: none;
+  }
+  .photos {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+  }
+  .product-card.hiddenElement:not(.fully-visible) {
+      opacity: 0.5;
+  }
+  .product-image {
+      transition: opacity 0.3s;
+  }
+  .product-image:hover {
+      opacity: 0;
+  }
 </style>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fully-visible');
-                } else {
-                    entry.target.classList.remove('fully-visible');
-                }
-            });
-        });
+  document.addEventListener('DOMContentLoaded', function() {
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('fully-visible');
+              } else {
+                  entry.target.classList.remove('fully-visible');
+              }
+          });
+      });
 
-        const productCards = document.querySelectorAll('.product-card');
-        productCards.forEach((card) => observer.observe(card));
+      const productCards = document.querySelectorAll('.product-card');
+      productCards.forEach((card) => observer.observe(card));
 
-        // Hover effect for product images
-        const productImages = document.querySelectorAll('.product-image');
-        productImages.forEach((image) => {
-            image.addEventListener('mouseover', function() {
-                const hoverSrc = this.getAttribute('data-hover-src');
-                if (hoverSrc) {
-                    this.setAttribute('data-src', this.src);
-                    this.src = hoverSrc;
-                }
-            });
-            image.addEventListener('mouseout', function() {
-                const originalSrc = this.getAttribute('data-src');
-                if (originalSrc) {
-                    this.src = originalSrc;
-                }
-            });
-        });
-    });
+      // Hover effect for product images
+      const productImages = document.querySelectorAll('.product-image');
+      productImages.forEach((image) => {
+          image.addEventListener('mouseover', function() {
+              const hoverSrc = this.getAttribute('data-hover-src');
+              if (hoverSrc) {
+                  this.setAttribute('data-src', this.src);
+                  this.src = hoverSrc;
+              }
+          });
+          image.addEventListener('mouseout', function() {
+              const originalSrc = this.getAttribute('data-src');
+              if (originalSrc) {
+                  this.src = originalSrc;
+              }
+          });
+      });
+  });
 </script>
 
 {% schema %}
 {
-    "name": "Product Cards Section",
+    "name": "Evan's Product Cards",
     "settings": [
         {
             "type": "text",
@@ -140,13 +143,18 @@
             "label": "Button Text",
             "default": "Shop All"
         },
-        
+
         {
             "type": "product_list",
             "id": "products",
             "label": "Products",
             "limit": 5
         }
-    ]
+    ],
+  "presets": [
+    {
+      "name": "Evan's Product Cards"
+    }
+  ]
 }
 {% endschema %}
