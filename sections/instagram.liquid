@@ -48,13 +48,13 @@
       "name": "Default",
       "category": "Custom",
       "settings": {
-        "image_1": "shopify://shop_images/instagram_1.jpg",
+        "image_1": "",
         "link_1": "https://www.instagram.com/getguaranteeth/",
-        "image_2": "shopify://shop_images/instagram_2.jpg",
+        "image_2": "",
         "link_2": "https://www.instagram.com/getguaranteeth/",
-        "image_3": "shopify://shop_images/instagram_3.jpg",
+        "image_3": "",
         "link_3": "https://www.instagram.com/getguaranteeth/",
-        "image_4": "shopify://shop_images/instagram_4.jpg",
+        "image_4": "",
         "link_4": "https://www.instagram.com/getguaranteeth/"
       }
     }
@@ -70,8 +70,8 @@
 <div class="px-4 flex w-100vw mb-16 mt-8 mx-auto overflow-x-scroll overflow-y-scroll flex-row photos">
   <div class="flex md:justify-evenly md:w-full md:gap-0 gap-4 w-260vw">
     {% for i in (1..4) %}
-      {% assign image = block.settings["image_" | append: i] %}
-      {% assign link = block.settings["link_" | append: i] %}
+      {% assign image = section.settings["image_" | append: i] %}
+      {% assign link = section.settings["link_" | append: i] %}
       <div class="sm-w-20vw sm-h-20vw w-30vh h-30vh relative group bg-black" onclick="window.location = '{{ link }}'">
         <div class="absolute inset-0 flex justify-center items-center z-10 opacity-0 group-hover-opacity-100 duration-500">
           <svg class="h-12 w-12 lg-w-10 lg-h-10" fill="white" viewBox="0 0 24 24" aria-hidden="true">
@@ -84,92 +84,93 @@
   </div>
 </div>
 
+
 <style>
-    .ml-3vw {
-        margin-left: 3vw;
-      }
-      .mt-8 {
-        margin-top: 2rem; /* Tailwind uses rem units */
-      }
-      .text-2xl {
-        font-size: 1.5rem; /* Tailwind uses rem units */
-      }
-      .text-gray-400 {
-        color: #cbd5e0;
-      }
-      .px-4 {
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
-      .flex {
-        display: flex;
-      }
-      .w-100vw {
-        width: 100vw;
-      }
-      .mb-16 {
-        margin-bottom: 4rem;
-      }
-      .mx-auto {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .overflow-x-scroll {
-        overflow-x: scroll;
-      }
-      .overflow-y-scroll {
-        overflow-y: scroll;
-      }
-      .flex-row {
-        flex-direction: row;
-      }
-      .photos::-webkit-scrollbar {
-        display: none;
-      }
-      .photos {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-      }
-      .gap-4 {
-        gap: 1rem;
-      }
-      .w-260vw {
-        width: 260vw;
-      }
-      .sm-w-20vw {
-        width: 20vw;
-      }
-      .sm-h-20vw {
-        height: 20vw;
-      }
-      .w-30vh {
-        width: 30vh;
-      }
-      .h-30vh {
-        height: 30vh;
-      }
-      .relative {
-        position: relative;
-      }
-      .group {
-        display: inline-block;
-      }
-      .bg-black {
-        background-color: black;
-      }
-      .absolute {
-        position: absolute;
-      }
-      .inset-0 {
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-      }
-      .z-10 {
-        z-index: 10;
-      }
-      .opacity-0 {
-        opacity: 0;
-      }
-</style>
+  .ml-3vw {
+    margin-left: 3vw;
+  }
+  .mt-8 {
+    margin-top: 2rem; /* Tailwind uses rem units */
+  }
+  .text-2xl {
+    font-size: 1.5rem; /* Tailwind uses rem units */
+  }
+  .text-gray-400 {
+    color: #cbd5e0;
+  }
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .flex {
+    display: flex;
+  }
+  .w-100vw {
+    width: 100vw;
+  }
+  .mb-16 {
+    margin-bottom: 4rem;
+  }
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .overflow-x-scroll {
+    overflow-x: scroll;
+  }
+  .overflow-y-scroll {
+    overflow-y: scroll;
+  }
+  .flex-row {
+    flex-direction: row;
+  }
+  .photos::-webkit-scrollbar {
+    display: none;
+  }
+  .photos {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .gap-4 {
+    gap: 1rem;
+  }
+  .w-260vw {
+    width: 260vw;
+  }
+  .sm-w-20vw {
+    width: 20vw;
+  }
+  .sm-h-20vw {
+    height: 20vw;
+  }
+  .w-30vh {
+    width: 30vh;
+  }
+  .h-30vh {
+    height: 30vh;
+  }
+  .relative {
+    position: relative;
+  }
+  .group {
+    display: inline-block;
+  }
+  .bg-black {
+    background-color: black;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .opacity-0 {
+    opacity: 0;
+  }
+  </style>
