@@ -32,3 +32,48 @@
         </section>
     </div>
 </section>
+
+{% schema %}
+{
+    "name": "Product Cards Section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Shop our best sellers"
+        },
+        {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description",
+            "default": "Explore our range of fan-favourites"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "Shop All"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link",
+            "default": "/products"
+        },
+        {
+            "type": "product_list",
+            "id": "products",
+            "label": "Products",
+            "limit": 5
+        }
+    ],
+    "presets": [
+      {
+        "name": "Video Carousel",
+        "category": "Custom"
+      }
+    ]
+
+}
+{% endschema %}
