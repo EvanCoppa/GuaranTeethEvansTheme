@@ -245,6 +245,7 @@
     },
     "prodcut_cards_nLj6X4": {
       "type": "prodcut-cards",
+      "disabled": true,
       "settings": {
       }
     }

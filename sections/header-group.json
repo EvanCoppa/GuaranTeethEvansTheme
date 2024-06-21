@@ -16,7 +16,7 @@
       "settings": {
         "announcement_text": "Free Toothpaste Tablets with ANY purchase 🎉",
         "announcement_count": 14,
-        "background_color": "#2563EB"
+        "background_color": "#2532ff"
       }
     },
     "announcement_bar_EBgPHR": {
@@ -33,6 +33,7 @@
       "block_order": [
         "announcement_3L7mAc"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-7aad8d2f-4a73-4d5e-b325-5234a8cfbc44",
         "show_line_separator": true,
