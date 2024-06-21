@@ -1,0 +1,110 @@
+{% assign slide_width = section.settings.slide_width %}
+{% assign slide_height = section.settings.slide_height %}
+
+<style>
+  :root {
+    --slide-width: {{ slide_width }};
+    --slide-height: {{ slide_height }};
+  }
+
+  .carousel__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .carousel {
+    padding: 100px 0;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .carousel__slide {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    flex: 0 0 auto;
+    width: var(--slide-width);
+    height: var(--slide-height);
+    box-sizing: border-box;
+  }
+</style>
+
+<section class="carousel">
+  <div class="container-fluid px-0">
+    <div class="row">
+      <div class="col-12">
+        <div class="carousel__wrapper">
+          {% for i in (1..5) %}
+            {% assign video_id = "video_" | append: i %}
+            {% if section.settings[video_id] %}
+              <div class="carousel__slide">
+                {{ section.settings[video_id] | video_tag: autoplay: true, loop: true, muted: true }}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Video Carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Carousel heading",
+      "default": "Our Videos"
+    },
+    {
+      "type": "video",
+      "id": "video_1",
+      "label": "Video 1"
+    },
+    {
+      "type": "video",
+      "id": "video_2",
+      "label": "Video 2"
+    },
+    {
+      "type": "video",
+      "id": "video_3",
+      "label": "Video 3"
+    },
+    {
+      "type": "video",
+      "id": "video_4",
+      "label": "Video 4"
+    },
+    {
+      "type": "video",
+      "id": "video_5",
+      "label": "Video 5"
+    },
+    {
+      "type": "text",
+      "id": "slide_width",
+      "label": "Slide width",
+      "default": "250px"
+    },
+    {
+      "type": "text",
+      "id": "slide_height",
+      "label": "Slide height",
+      "default": "350px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video Carousel",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
