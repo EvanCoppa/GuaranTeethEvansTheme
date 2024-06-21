@@ -241,6 +241,19 @@
         "slide_width": "250px",
         "slide_height": "350px"
       }
+    },
+    "prodcut_cards_nLj6X4": {
+      "type": "prodcut-cards",
+      "settings": {
+        "title": "Shop our best sellers",
+        "description": "Explore our range of fan-favourites",
+        "button_text": "Shop All",
+        "products": [
+          "guaranteeth-bamboo-toothbrush",
+          "guaranteeth-electric-toothbrush",
+          "guaranteeth-eco-friendly-dental-floss-picks"
+        ]
+      }
     }
   },
   "order": [
@@ -250,6 +263,7 @@
     "image_with_text_Ft86XH",
     "collage_g8Mb6k",
     "collection_list_kLFR33",
-    "clips_C9GnBW"
+    "clips_C9GnBW",
+    "prodcut_cards_nLj6X4"
   ]
 }
