@@ -11,6 +11,14 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "banner_cWwMhf": {
+      "type": "banner",
+      "settings": {
+        "announcement_text": "Free Toothpaste Tablets with ANY purchase 🎉",
+        "announcement_count": 14,
+        "background_color": "#2563EB"
+      }
+    },
     "announcement_bar_EBgPHR": {
       "type": "announcement-bar",
       "blocks": {
@@ -55,6 +63,7 @@
     }
   },
   "order": [
+    "banner_cWwMhf",
     "announcement_bar_EBgPHR",
     "header"
   ]
