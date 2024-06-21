@@ -1,30 +1,30 @@
-<section class="product-cards-section">
-    <div class="container">
-        <div class="info-box">
-            <div class="info-content">
+<section>
+    <div>
+        <div>
+            <div>
                 <h2>{{ section.settings.title }}</h2>
                 <p>{{ section.settings.description }}</p>
-                <a href="{{ section.settings.button_link }}" class="info-button">
+                <a href="{{ section.settings.button_link }}">
                     {{ section.settings.button_text }}
-                    <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="icon-chevron-right">
+                    <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                         <path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
                     </svg>
                 </a>
             </div>
         </div>
-        <section class="photos">
-            <div class="photos-container">
+        <section>
+            <div>
                 {% for product in section.settings.products %}
-                    <div class="product-card">
-                        <div class="product-content">
-                            <a href="{{ product.url }}" class="product-image-link">
-                                <img src="{{ product.images[0] | img_url: '1000x' }}" data-hover-src="{{ product.images[1] | img_url: '1000x' }}" alt="{{ product.title }}" class="product-image">
+                    <div>
+                        <div>
+                            <a href="{{ product.url }}">
+                                <img src="{{ product.images[0] | img_url: '1000x' }}" data-hover-src="{{ product.images[1] | img_url: '1000x' }}" alt="{{ product.title }}">
                             </a>
-                            <div class="product-info">
-                                <a href="{{ product.url }}" class="product-title">{{ product.title }}</a>
-                                <div class="product-price">{{ product.price | money }}</div>
+                            <div>
+                                <a href="{{ product.url }}">{{ product.title }}</a>
+                                <div>{{ product.price | money }}</div>
                             </div>
-                            <button onclick="addToCart('{{ product.id }}')" class="add-to-cart-button">Add to Cart</button>
+                            <button onclick="addToCart('{{ product.id }}')">Add to Cart</button>
                         </div>
                     </div>
                 {% endfor %}
@@ -32,234 +32,3 @@
         </section>
     </div>
 </section>
-
-<style>
-    .product-cards-section {
-        height: 500px;
-        width: 100%;
-        padding: 1.5rem 0;
-    }
-
-    .container {
-        margin: 0 auto;
-        display: flex;
-        height: 100%;
-        width: 95%;
-        max-width: 1280px;
-    }
-
-    .info-box {
-        display: none;
-        height: 100%;
-        width: 25%;
-        border-radius: 0.5rem;
-        background-color: #f3f4f6;
-    }
-
-    @media (min-width: 768px) {
-        .info-box {
-            display: flex;
-        }
-    }
-
-    .info-content {
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 1.5rem;
-    }
-
-    .info-content h2 {
-        font-size: 2.5rem;
-    }
-
-    .info-content p {
-        margin: 0;
-    }
-
-    .info-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: auto;
-        padding: 0.5rem 1rem;
-        border: 2px solid #d1d5db;
-        border-radius: 9999px;
-        transition: all 0.3s;
-    }
-
-    .info-button:hover {
-        border-color: #000;
-    }
-
-    .icon-chevron-right {
-        margin-left: 0.5rem;
-        width: 0.75rem;
-        height: 0.75rem;
-    }
-
-    .photos {
-        width: 100%;
-        overflow-y: hidden;
-        overflow-x: scroll;
-        padding-left: 1rem;
-    }
-
-    .photos-container {
-        display: flex;
-        height: 100%;
-        width: 1100px;
-        gap: 1rem;
-    }
-
-    .product-card {
-        position: relative;
-        margin: auto 0;
-        transition: transform 0.15s;
-    }
-
-    .product-card:hover {
-        transform: scale(1.01);
-    }
-
-    .hiddenElement {
-        opacity: 1;
-        transition: opacity 0.3s, transform 0.3s;
-    }
-
-    .photos::-webkit-scrollbar {
-        display: none;
-    }
-
-    .photos {
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
-    }
-
-    .product-card.hiddenElement:not(.fully-visible) {
-        opacity: 0.5;
-    }
-
-    .product-image {
-        width: 100%;
-        height: 70%;
-        object-fit: cover;
-        border-radius: 0.5rem;
-        transition: opacity 0.3s;
-    }
-
-    .product-info {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-        padding: 0.5rem 0;
-        text-align: center;
-    }
-
-    .product-title {
-        font-size: 1.25rem;
-        color: rgba(0, 0, 0, 0.85);
-        transition: all 0.3s;
-    }
-
-    .product-title:hover {
-        text-decoration: underline;
-    }
-
-    .product-price {
-        font-size: 1rem;
-        font-weight: 600;
-        color: #2563eb;
-    }
-
-    .add-to-cart-button {
-        margin: 0 1rem;
-        margin-top: auto;
-        height: 2.5rem;
-        width: auto;
-        border-radius: 9999px;
-        background-color: #000;
-        color: #fff;
-        transition: all 0.3s;
-    }
-
-    .add-to-cart-button:hover {
-        border: 2px solid #000;
-        background-color: #fff;
-        color: #000;
-    }
-</style>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fully-visible');
-                } else {
-                    entry.target.classList.remove('fully-visible');
-                }
-            });
-        });
-
-        const productCards = document.querySelectorAll('.product-card');
-        productCards.forEach((card) => observer.observe(card));
-
-        // Hover effect for product images
-        const productImages = document.querySelectorAll('.product-image');
-        productImages.forEach((image) => {
-            image.addEventListener('mouseover', function() {
-                const hoverSrc = this.getAttribute('data-hover-src');
-                if (hoverSrc) {
-                    this.setAttribute('data-src', this.src);
-                    this.src = hoverSrc;
-                }
-            });
-            image.addEventListener('mouseout', function() {
-                const originalSrc = this.getAttribute('data-src');
-                if (originalSrc) {
-                    this.src = originalSrc;
-                }
-            });
-        });
-    });
-</script>
-
-{% schema %}
-{
-    "name": "Evan's Product Cards",
-    "settings": [
-        {
-            "type": "text",
-            "id": "title",
-            "label": "Title",
-            "default": "Shop our best sellers"
-        },
-        {
-            "type": "textarea",
-            "id": "description",
-            "label": "Description",
-            "default": "Explore our range of fan-favourites"
-        },
-        {
-            "type": "text",
-            "id": "button_text",
-            "label": "Button Text",
-            "default": "Shop All"
-        },
-
-        {
-            "type": "product_list",
-            "id": "products",
-            "label": "Products",
-            "limit": 5
-        }
-    ],
-  "presets": [
-    {
-      "name": "Evan's Product Cards"
-    }
-  ]
-}
-{% endschema %}
