@@ -222,10 +222,10 @@
       "scheme-7aad8d2f-4a73-4d5e-b325-5234a8cfbc44": {
         "settings": {
           "background": "#2532ff",
-          "background_gradient": "linear-gradient(180deg, rgba(37, 50, 255, 0), rgba(255, 255, 255, 1) 100%)",
+          "background_gradient": "",
           "text": "#ffffff",
           "button": "#2532ff",
-          "button_label": "#fdfbf7",
+          "button_label": "#2532ff",
           "secondary_button_label": "#2e2a39",
           "shadow": "#000000"
         }
