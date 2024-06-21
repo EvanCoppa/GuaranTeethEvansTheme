@@ -39,7 +39,7 @@
       <div class="col-12">
         <div class="carousel__wrapper">
           {% for i in (1..5) %}
-            {% assign video_id = "video_" | append: i %}
+            {% assign video_id = 'video_' | append: i %}
             {% if section.settings[video_id] %}
               <div class="carousel__slide">
                 {{ section.settings[video_id] | video_tag: autoplay: true, loop: true, muted: true }}
@@ -54,7 +54,7 @@
 
 {% schema %}
 {
-  "name": "Video Carousel",
+  "name": "Evan's Video Carousel",
   "settings": [
     {
       "type": "text",
