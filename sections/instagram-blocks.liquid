@@ -1,63 +1,4 @@
-{% schema %}
-{
-  "name": "Instagram Feed",
-  "settings": [],
-  "blocks": [
-    {
-      "type": "post",
-      "name": "Post",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Link"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Default",
-      "category": "Custom",
-      "blocks": [
-        {
-          "type": "post",
-          "settings": {
-            "image": "",
-            "link": "https://www.instagram.com/getguaranteeth/"
-          }
-        },
-        {
-          "type": "post",
-          "settings": {
-            "image": "",
-            "link": "https://www.instagram.com/getguaranteeth/"
-          }
-        },
-        {
-          "type": "post",
-          "settings": {
-            "image": "",
-            "link": "https://www.instagram.com/getguaranteeth/"
-          }
-        },
-        {
-          "type": "post",
-          "settings": {
-            "image": "",
-            "link": "https://www.instagram.com/getguaranteeth/"
-          }
-        }
-      ]
-    }
-  ]
-}
-{% endschema %}
+
 
 <h2 class="ml-3vw mt-8 text-2xl">
   The experts in smilecare
@@ -199,3 +140,35 @@
   }
 
 </style>
+
+
+{% schema %}
+{
+  "name": "Instagram Feed",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "post",
+      "name": "Post",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Instagram"
+    }
+  ]
+}
+{% endschema %}
