@@ -154,12 +154,6 @@
     "collage_g8Mb6k": {
       "type": "collage",
       "blocks": {
-        "image_N73gtx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/V34_-_Content_-_Block_-_1_780x_2a5842b8-09bc-4497-b255-25e63de7f813.webp"
-          }
-        },
         "product_fHrX44": {
           "type": "product",
           "settings": {
@@ -172,12 +166,19 @@
           "settings": {
             "collection": "everyday-oral-care"
           }
+        },
+        "product_tjkfmG": {
+          "type": "product",
+          "settings": {
+            "product": "guaranteeth-electric-toothbrush",
+            "second_image": false
+          }
         }
       },
       "block_order": [
-        "image_N73gtx",
         "product_fHrX44",
-        "collection_wCpdDk"
+        "collection_wCpdDk",
+        "product_tjkfmG"
       ],
       "settings": {
         "heading": "Instant Results.",
@@ -245,14 +246,6 @@
     "prodcut_cards_nLj6X4": {
       "type": "prodcut-cards",
       "settings": {
-        "title": "Shop our best sellers",
-        "description": "Explore our range of fan-favourites",
-        "button_text": "Shop All",
-        "products": [
-          "guaranteeth-bamboo-toothbrush",
-          "guaranteeth-electric-toothbrush",
-          "guaranteeth-eco-friendly-dental-floss-picks"
-        ]
       }
     }
   },
