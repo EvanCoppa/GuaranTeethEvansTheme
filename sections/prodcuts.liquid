@@ -5,7 +5,7 @@
                 <h2 class="text-4xl">{{ section.settings.title }}</h2>
                 <p>{{ section.settings.description }}</p>
                 <a
-                    href="{{ section.settings.button_link }}"
+                    href="/prodcuts"
                     class="mr-auto flex rounded-full border-2 border-gray-300 px-3 py-2 transition-all duration-300 hover:border-black"
                     >{{ section.settings.button_text }}
                     <svg
@@ -140,12 +140,7 @@
             "label": "Button Text",
             "default": "Shop All"
         },
-        {
-            "type": "url",
-            "id": "button_link",
-            "label": "Button Link",
-            "default": "products"
-        },
+        
         {
             "type": "product_list",
             "id": "products",
