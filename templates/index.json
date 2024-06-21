@@ -43,8 +43,8 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "At-Home, Dentist Level Clean",
-            "heading_size": "h2"
+            "heading": "Dentist Level Clean At-Home",
+            "heading_size": "h1"
           }
         },
         "button": {
@@ -60,17 +60,20 @@
         "heading",
         "button"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Screenshot_2024-04-23_at_9.03.26_PM.jpg",
         "height": "adapt",
-        "desktop_image_width": "large",
+        "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "overlap",
         "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-1",
-        "image_behavior": "none",
+        "color_scheme": "scheme-122a81de-a592-46cc-b41a-c9bb16b7b878",
+        "image_behavior": "ambient",
         "mobile_content_alignment": "center",
         "padding_top": 0,
         "padding_bottom": 0
@@ -149,6 +152,18 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "clips_C9GnBW": {
+      "type": "clips",
+      "settings": {
+        "heading": "Our Videos",
+        "video_1": "shopify:\/\/files\/videos\/UnboxWithMe.mp4",
+        "video_2": "shopify:\/\/files\/videos\/OnTheGoSizzle.mp4",
+        "video_3": "shopify:\/\/files\/videos\/KamariBRollEdit.mp4",
+        "video_4": "shopify:\/\/files\/videos\/TikTok2.mp4",
+        "slide_width": "250px",
+        "slide_height": "350px"
       }
     },
     "collage_g8Mb6k": {
@@ -236,18 +251,6 @@
       "disabled": true,
       "settings": {
       }
-    },
-    "clips_C9GnBW": {
-      "type": "clips",
-      "settings": {
-        "heading": "Our Videos",
-        "video_1": "shopify:\/\/files\/videos\/UnboxWithMe.mp4",
-        "video_2": "shopify:\/\/files\/videos\/OnTheGoSizzle.mp4",
-        "video_3": "shopify:\/\/files\/videos\/KamariBRollEdit.mp4",
-        "video_4": "shopify:\/\/files\/videos\/TikTok2.mp4",
-        "slide_width": "250px",
-        "slide_height": "350px"
-      }
     }
   },
   "order": [
@@ -255,9 +258,9 @@
     "image-with-text",
     "featured-collection",
     "image_with_text_Ft86XH",
+    "clips_C9GnBW",
     "collage_g8Mb6k",
     "collection_list_kLFR33",
-    "prodcut_cards_nLj6X4",
-    "clips_C9GnBW"
+    "prodcut_cards_nLj6X4"
   ]
 }
